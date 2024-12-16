@@ -1,0 +1,158 @@
+﻿<Window x:Class="WpfDefaultTheme.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:WpfDefaultTheme"
+        mc:Ignorable="d" x:Name="dialog"
+        Title="MainWindow" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+  <Window.DataContext>
+    <local:ViewModel />
+  </Window.DataContext>
+  <Window.Resources>
+    <ThemeModeConverter x:Key="ThemeModeConverter" />
+  </Window.Resources>
+  <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+    <Grid Margin="16">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="auto" />
+        <RowDefinition Height="4" />
+        <RowDefinition Height="auto" />
+        <RowDefinition Height="4" />
+        <RowDefinition Height="auto" />
+        <RowDefinition Height="4" />
+        <RowDefinition Height="auto" />
+        <RowDefinition Height="4" />
+        <RowDefinition Height="auto" />
+        <RowDefinition Height="4" />
+        <RowDefinition Height="auto" />
+        <RowDefinition Height="4" />
+        <RowDefinition Height="auto" />
+        <RowDefinition Height="4" />
+        <RowDefinition Height="auto" />
+        <RowDefinition Height="4" />
+        <RowDefinition Height="auto" />
+        <RowDefinition Height="4" />
+        <RowDefinition Height="auto" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="auto" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Label Grid.Row="0" Grid.Column="0" Content="Button" />
+      <Grid Grid.Row="0" Grid.Column="1">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="4" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="4" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="4" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Content="None" IsDefault="True" Command="{Binding ThemeButtonClickCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}" />
+        <Button Grid.Column="2" Content="System" Style="{DynamicResource AccentButtonStyle}" Command="{Binding ThemeButtonClickCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}" />
+        <Button Grid.Column="4" Content="Dark" Command="{Binding ThemeButtonClickCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}" />
+        <Button Grid.Column="6" Content="Light" Command="{Binding ThemeButtonClickCommand}" CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}" />
+      </Grid>
+      <Label Grid.Row="2" Grid.Column="0" Content="CheckBox" />
+      <Grid Grid.Row="2" Grid.Column="1">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="4" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <CheckBox Grid.Column="0" Content="Two State CheckBox" VerticalAlignment="Center" />
+        <CheckBox Grid.Column="2" Content="Three State CheckBox" IsThreeState="True" VerticalAlignment="Center" />
+      </Grid>
+      <GroupBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Header="RadioButtons">
+        <StackPanel Orientation="Horizontal">
+          <RadioButton Content="Left Radio" />
+          <RadioButton Content="Center Radio" />
+          <RadioButton Content="Right Radio" />
+        </StackPanel>
+      </GroupBox>
+      <Label Grid.Row="6" Grid.Column="0" Content="ComboBox" />
+      <Grid Grid.Row="6" Grid.Column="1">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="4" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <ComboBox Grid.Column="0" ItemsSource="{Binding ComboItems}" SelectedItem="{Binding SelectedComboItem}" />
+        <ComboBox Grid.Column="2" ItemsSource="{Binding ComboItems}" IsEditable="True" SelectedItem="{Binding SelectedComboItem}" />
+      </Grid>
+      <Border Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="{DynamicResource ControlStrokeColorDefaultBrush}" BorderThickness="1" />
+      <Label Grid.Row="8" Grid.Column="0" Content="TextBlock" />
+      <Grid Grid.Row="8" Grid.Column="1">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="auto" />
+          <ColumnDefinition Width="4" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" BorderBrush="Blue" BorderThickness="1" />
+        <TextBlock Grid.Column="0" Text="No Style" />
+        <Border Grid.Column="2" BorderBrush="Red" BorderThickness="1" />
+        <TextBlock Grid.Column="2" Text="VerticalAlignment=Center" VerticalAlignment="Center" />
+      </Grid>
+      <Label Grid.Row="10" Content="TextBox" />
+      <Grid Grid.Row="10" Grid.Column="1">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="4" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="4" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Column="0" Text="No Style" />
+        <TextBox Grid.Column="2" Text="VerticalAlignment=Center" VerticalAlignment="Center" />
+        <TextBox Grid.Column="4" Text="VerticalContentAlignment=Center" VerticalContentAlignment="Center" />
+      </Grid>
+      <Label Grid.Row="12" Grid.Column="0" Content="ListBox" />
+      <ListBox Grid.Row="12" Grid.Column="1" ItemsSource="{Binding Items}" d:ItemsSource="{d:SampleData ItemCount=3}">
+        <ListBox.ItemTemplate>
+          <DataTemplate>
+            <TextBlock Text="{Binding Item}" />
+          </DataTemplate>
+        </ListBox.ItemTemplate>
+      </ListBox>
+      <Label Grid.Row="14" Grid.Column="0" Content="ListView" />
+      <ListView Grid.Row="14" Grid.Column="1" ItemsSource="{Binding Items}" d:ItemsSource="{d:SampleData ItemCount=3}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <TextBlock Text="{Binding Item}" />
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+      <Label Grid.Row="16" Grid.Column="0" Content="GridView" />
+      <ListView Grid.Row="16" Grid.Column="1" ItemsSource="{Binding Items}" d:ItemsSource="{d:SampleData ItemCount=3}">
+        <ListView.View>
+          <GridView>
+            <GridViewColumn Header="Item" DisplayMemberBinding="{Binding Item}" />
+            <GridViewColumn Header="SubItem" DisplayMemberBinding="{Binding SubItem}" />
+            <GridViewColumn Header="SubItem2" DisplayMemberBinding="{Binding SubItem2}" />
+            <GridViewColumn Header="SubItem3" DisplayMemberBinding="{Binding SubItem3}" />
+          </GridView>
+        </ListView.View>
+      </ListView>
+      <Label Grid.Row="18" Grid.Column="0" Content="DataGrid" />
+      <DataGrid Grid.Row="18" Grid.Column="1" ItemsSource="{Binding Items}" d:ItemsSource="{d:SampleData ItemCount=3}">
+        <!--<DataGrid.CellStyle>
+          <Style TargetType="DataGridCell">
+            <Setter Property="Template">
+              <Setter.Value>
+                <ControlTemplate TargetType="DataGridCell">
+                  <Grid Background="{TemplateBinding Background}" Height="{TemplateBinding Height}">
+                    <ContentPresenter VerticalAlignment="Center" />
+                  </Grid>
+                </ControlTemplate>
+              </Setter.Value>
+            </Setter>
+          </Style>
+        </DataGrid.CellStyle>-->
+      </DataGrid>
+    </Grid>
+  </ScrollViewer>
+</Window>
