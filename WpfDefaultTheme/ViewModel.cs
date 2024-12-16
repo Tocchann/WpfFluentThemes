@@ -32,9 +32,9 @@ public partial class ViewModel : ObservableRecipient
 
 	public ViewModel()
 	{
-		Items.Add( new ListItem( "Item 1", "SubItem 1", 1, true ) );
-		Items.Add( new ListItem( "Item 2", "SubItem 2", 2, true ) );
-		Items.Add( new ListItem( "Item 3", "SubItem 3", 3, false ) );
+		Items.Add( new( "Item 1", "SubItem 1", 1, true ) );
+		Items.Add( new( "Item 2", "SubItem 2", 2, true ) );
+		Items.Add( new( "Item 3", "SubItem 3", 3, false ) );
 		ComboItems.Add( "ComboItem1" );
 		ComboItems.Add( "ComboItem2" );
 		ComboItems.Add( "ComboItem3" );
