@@ -11,6 +11,13 @@
     <local:ViewModel />
   </Window.DataContext>
   <StackPanel Margin="16" Orientation="Vertical">
+    <GroupBox Header="RadioButton">
+      <WrapPanel Orientation="Horizontal">
+        <RadioButton Content="System" GroupName="ThemeModes" IsChecked="{Binding ThemeMode, Converter={StaticResource BoolToThemeModeConverter}, Mode=TwoWay, ConverterParameter=System}" />
+        <RadioButton Content="Dark" GroupName="ThemeModes" IsChecked="{Binding ThemeMode, Converter={StaticResource BoolToThemeModeConverter}, Mode=TwoWay, ConverterParameter=Dark}" />
+        <RadioButton Content="Light" GroupName="ThemeModes" IsChecked="{Binding ThemeMode, Converter={StaticResource BoolToThemeModeConverter}, Mode=TwoWay, ConverterParameter=Light}" />
+      </WrapPanel>
+    </GroupBox>
     <GroupBox Header="Button">
       <WrapPanel Orientation="Horizontal">
         <Button Content="Button" />
@@ -23,13 +30,6 @@
       <WrapPanel Orientation="Horizontal">
         <CheckBox Content="Two State CheckBox" />
         <CheckBox Content="Three State CheckBox" IsThreeState="True" />
-      </WrapPanel>
-    </GroupBox>
-    <GroupBox Header="RadioButton">
-      <WrapPanel Orientation="Horizontal">
-        <RadioButton Content="Radio 1" />
-        <RadioButton Content="Radio 2" />
-        <RadioButton Content="Radio 3" />
       </WrapPanel>
     </GroupBox>
     <GroupBox Header="ComboBox">
@@ -81,6 +81,23 @@
         <Label Grid.Column="0" Content="TextBoxのラベル" VerticalContentAlignment="Center" />
         <TextBox Grid.Column="1" Text="TextBox" VerticalContentAlignment="Center" />
       </Grid>
+    </GroupBox>
+    <GroupBox Header="DataGrid">
+      <DataGrid Grid.Row="18" Grid.Column="1" ItemsSource="{Binding Items}" d:ItemsSource="{d:SampleData ItemCount=3}">
+        <DataGrid.CellStyle>
+          <Style TargetType="DataGridCell">
+            <Setter Property="Template">
+              <Setter.Value>
+                <ControlTemplate TargetType="DataGridCell">
+                  <Grid Background="{TemplateBinding Background}" Height="{TemplateBinding Height}">
+                    <ContentPresenter VerticalAlignment="Center" />
+                  </Grid>
+                </ControlTemplate>
+              </Setter.Value>
+            </Setter>
+          </Style>
+        </DataGrid.CellStyle>
+      </DataGrid>
     </GroupBox>
   </StackPanel>
 </Window>
