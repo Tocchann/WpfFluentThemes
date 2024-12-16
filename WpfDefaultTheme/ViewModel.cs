@@ -13,7 +13,7 @@ public partial class ViewModel : ObservableRecipient
 
 	[ObservableProperty]
 	[NotifyPropertyChangedRecipients]
-	public partial string? SelectedComboItem { get; set; }
+	string? selectedComboItem;
 
 	[ObservableProperty]
 	[NotifyPropertyChangedRecipients]
