@@ -12,7 +12,6 @@ public partial class ViewModel : ObservableRecipient
 	public ObservableCollection<string> ComboItems { get; } = new();
 
 	[ObservableProperty]
-	[NotifyPropertyChangedRecipients]
 	string? selectedComboItem;
 
 	[ObservableProperty]
