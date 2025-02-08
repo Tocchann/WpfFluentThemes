@@ -36,6 +36,8 @@
         <RowDefinition Height="auto" />
         <RowDefinition Height="4" />
         <RowDefinition Height="auto" />
+        <RowDefinition Height="4" />
+        <RowDefinition Height="auto" />
       </Grid.RowDefinitions>
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="auto" />
@@ -69,9 +71,10 @@
       </Grid>
       <GroupBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Header="RadioButtons">
         <StackPanel Orientation="Horizontal">
-          <RadioButton Content="Left Radio" />
-          <RadioButton Content="Center Radio" />
-          <RadioButton Content="Right Radio" />
+          <CheckBox Content="Enable Radio" IsChecked="{Binding IsEnabledRadio}" />
+          <RadioButton Content="Left Radio" IsEnabled="{Binding IsEnabledRadio}" />
+          <RadioButton Content="Center Radio" IsEnabled="{Binding IsEnabledRadio}" />
+          <RadioButton Content="Right Radio" IsEnabled="{Binding IsEnabledRadio}" />
         </StackPanel>
       </GroupBox>
       <Label Grid.Row="6" Grid.Column="0" Content="ComboBox" />
@@ -153,6 +156,7 @@
           </Style>
         </DataGrid.CellStyle>-->
       </DataGrid>
+      <Button Grid.Row="20" Grid.ColumnSpan="2" Content="パネルの表示" HorizontalAlignment="Center" Command="{Binding DisplayPanelCommand}" />
     </Grid>
   </ScrollViewer>
 </Window>

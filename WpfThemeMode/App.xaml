@@ -6,6 +6,7 @@
   <Application.Resources>
     <ResourceDictionary>
       <ResourceDictionary.MergedDictionaries>
+        <!--これを入れておくと、テーマモードを無効化できないので要注意-->
         <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Fluent;component/Themes/Fluent.xaml" />
       </ResourceDictionary.MergedDictionaries>
       <local:BoolToThemeModeConverter x:Key="BoolToThemeModeConverter" />

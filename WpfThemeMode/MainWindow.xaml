@@ -20,7 +20,7 @@
     </GroupBox>
     <GroupBox Header="Button">
       <WrapPanel Orientation="Horizontal">
-        <Button Content="Button" />
+        <Button Content="Button"  />
         <ToggleButton Content="ToggleButton" />
         <RepeatButton Content="RepeatButton" Command="{Binding IncrementCounterCommand}" />
         <Label VerticalContentAlignment="Center" Content="{Binding Counter}" />
@@ -30,20 +30,6 @@
       <WrapPanel Orientation="Horizontal">
         <CheckBox Content="Two State CheckBox" />
         <CheckBox Content="Three State CheckBox" IsThreeState="True" />
-      </WrapPanel>
-    </GroupBox>
-    <GroupBox Header="ComboBox">
-      <WrapPanel Orientation="Horizontal">
-        <ComboBox SelectedIndex="0">
-          <ComboBoxItem Content="Item 1" />
-          <ComboBoxItem Content="Item 2" />
-          <ComboBoxItem Content="Item 3" />
-        </ComboBox>
-        <ComboBox SelectedIndex="1" IsEditable="True">
-          <ComboBoxItem Content="Edit 1" />
-          <ComboBoxItem Content="Edit 2" />
-          <ComboBoxItem Content="Edit 3" />
-        </ComboBox>
       </WrapPanel>
     </GroupBox>
     <GroupBox Header="TextBlock">
@@ -82,8 +68,24 @@
         <TextBox Grid.Column="1" Text="TextBox" VerticalContentAlignment="Center" />
       </Grid>
     </GroupBox>
+    <GroupBox Header="ComboBox">
+      <WrapPanel Orientation="Horizontal">
+        <ComboBox ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}">
+          <ComboBox.ItemTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding Item}" />
+            </DataTemplate>
+          </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox IsEditable="True" SelectedIndex="0">
+          <ComboBoxItem Content="Edit 1" />
+          <ComboBoxItem Content="Edit 2" />
+          <ComboBoxItem Content="Edit 3" />
+        </ComboBox>
+      </WrapPanel>
+    </GroupBox>
     <GroupBox Header="DataGrid">
-      <DataGrid Grid.Row="18" Grid.Column="1" ItemsSource="{Binding Items}" d:ItemsSource="{d:SampleData ItemCount=3}">
+      <DataGrid Grid.Row="18" Grid.Column="1" ItemsSource="{Binding Items}" d:ItemsSource="{d:SampleData ItemCount=3}" SelectedItem="{Binding SelectedItem}">
         <DataGrid.CellStyle>
           <Style TargetType="DataGridCell">
             <Setter Property="Template">

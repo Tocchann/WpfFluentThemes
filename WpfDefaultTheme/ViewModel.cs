@@ -15,6 +15,9 @@ public partial class ViewModel : ObservableRecipient
 	string? selectedComboItem;
 
 	[ObservableProperty]
+	public partial bool IsEnabledRadio { get; set; }
+
+	[ObservableProperty]
 	[NotifyPropertyChangedRecipients]
 	public partial ThemeMode ThemeMode { get; set; }
 
@@ -28,6 +31,14 @@ public partial class ViewModel : ObservableRecipient
 			ThemeMode = (ThemeMode)obj;
 		}
 	}
+	[RelayCommand]
+	void DisplayPanel()
+	{
+		var dlg = new PhonePanel();
+		dlg.Owner = Application.Current.MainWindow;
+		dlg.ThemeMode = ThemeMode;
+		dlg.Show();
+	}
 
 	public ViewModel()
 	{
@@ -38,6 +49,7 @@ public partial class ViewModel : ObservableRecipient
 		ComboItems.Add( "ComboItem2" );
 		ComboItems.Add( "ComboItem3" );
 		ComboItems.Add( "ComboItem4" );
+		IsEnabledRadio = true;
 	}
 }
 #pragma warning restore WPF0001 // 種類は、評価の目的でのみ提供されています。将来の更新で変更または削除されることがあります。続行するには、この診断を非表示にします。

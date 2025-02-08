@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfThemeMode.PhonePanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfThemeMode"
+        mc:Ignorable="d"
+        Title="電話パネル" Width="400" Height="400">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="4" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="4" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="4" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="4" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="4" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Button Grid.Row="0" Grid.Column="0" Content="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <Button Grid.Row="0" Grid.Column="2" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <Button Grid.Row="0" Grid.Column="4" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+    <Button Grid.Row="2" Grid.Column="0" Content="4" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <Button Grid.Row="2" Grid.Column="2" Content="5" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <Button Grid.Row="2" Grid.Column="4" Content="6" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+    <Button Grid.Row="4" Grid.Column="0" Content="7" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <Button Grid.Row="4" Grid.Column="2" Content="8" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <Button Grid.Row="4" Grid.Column="4" Content="9" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+    <Button Grid.Row="6" Grid.Column="0" Content="*" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <Button Grid.Row="6" Grid.Column="2" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <Button Grid.Row="6" Grid.Column="4" Content="#" HorizontalAlignment="Center" VerticalAlignment="Center" />
+  </Grid>
+</Window>
