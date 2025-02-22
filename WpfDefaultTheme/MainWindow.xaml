@@ -87,7 +87,7 @@
         <ComboBox Grid.Column="0" ItemsSource="{Binding ComboItems}" SelectedItem="{Binding SelectedComboItem}" />
         <ComboBox Grid.Column="2" ItemsSource="{Binding ComboItems}" IsEditable="True" SelectedItem="{Binding SelectedComboItem}" />
       </Grid>
-      <Border Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="{DynamicResource ControlStrokeColorDefaultBrush}" BorderThickness="1" />
+      <Border Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="GreenYellow" BorderThickness="1" />
       <Label Grid.Row="8" Grid.Column="0" Content="TextBlock" />
       <Grid Grid.Row="8" Grid.Column="1">
         <Grid.ColumnDefinitions>
