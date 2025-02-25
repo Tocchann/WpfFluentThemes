@@ -4,7 +4,6 @@ using System.Collections.ObjectModel;
 using System.Windows;
 
 namespace WpfThemeMode;
-#pragma warning disable WPF0001 // 種類は、評価の目的でのみ提供されています。将来の更新で変更または削除されることがあります。続行するには、この診断を非表示にします。
 
 public partial class ViewModel : ObservableRecipient
 {
@@ -34,4 +33,3 @@ public partial class ViewModel : ObservableRecipient
 		SelectedItem = Items[0];
 	}
 }
-#pragma warning restore WPF0001 // 種類は、評価の目的でのみ提供されています。将来の更新で変更または削除されることがあります。続行するには、この診断を非表示にします。

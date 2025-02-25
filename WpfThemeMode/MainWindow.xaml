@@ -6,7 +6,7 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:WpfThemeMode"
         mc:Ignorable="d"
-        Title="MainWindow" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" ThemeMode="Dark">
   <Window.DataContext>
     <local:ViewModel />
   </Window.DataContext>
@@ -20,9 +20,9 @@
     </GroupBox>
     <GroupBox Header="Button">
       <WrapPanel Orientation="Horizontal">
-        <Button Content="Button"  />
-        <ToggleButton Content="ToggleButton" />
-        <RepeatButton Content="RepeatButton" Command="{Binding IncrementCounterCommand}" />
+        <Button Content="Button" Margin="0,0,4,0" />
+        <ToggleButton Content="ToggleButton" Margin="0,0,4,0" />
+        <RepeatButton Content="RepeatButton" Command="{Binding IncrementCounterCommand}" Margin="0,0,4,0" />
         <Label VerticalContentAlignment="Center" Content="{Binding Counter}" />
       </WrapPanel>
     </GroupBox>
