@@ -3,7 +3,7 @@
 ## アジェンダ
 
 - WPF for .NET 9 の主な変更点
-- field プロパティの導入(現在Preview)
+- C# 13 で追加された field プロパティ(Preview)
 - まとめ
 
 ## WPF for .NET 9 の主な変更点
@@ -55,22 +55,22 @@
 - DynamicResource なので状態変更に伴い変化する
 - 色だけではなく、コントロールにもスタイルが用意されている
 
-## field プロパティの導入(現在Preview)
-
-- プレビューなので .csproj に`<LangVersion>preview</LangVersion>`が必要
-- SourceGenerator を使っている場合に有利
-    - 自分で記述する場合でも利用可能
-    - 手書きでもフィールドを定義しなくてよくなる程度の効果はある
-- CommunityToolkit.MVVM で利用
-    - field プロパティを使って自動生成することで、SourceGenerator による自動生成が可能になった
-    - 属性との組み合わせの活用範囲が広がった
-
 ## BinaryFormatter のサポート終了に伴う変化
 
 - クリップボードなどに保存している場合などで影響が出る「***場合がある***」
     - DataFormats.Serializable など
 - 元がプリミティブな型であればほぼ影響しない
     - string や DateTime、bool、int、byte[] などは影響しない
+
+## C# 13 で追加された field プロパティ(Preview)
+
+- プレビューなので .csproj に`<LangVersion>preview</LangVersion>`が必要
+- SourceGenerator を使っている場合に有利
+    - 自分で記述する場合でも利用可能
+    - 手書きでもフィールドを定義しなくてよくなる程度の効果はある
+- CommunityToolkit.MVVM で利用
+    - field プロパティを使うことでプロパティとして宣言可能に
+    - 属性との組み合わせの活用範囲が広がった
 
 ## まとめ
 
@@ -80,6 +80,5 @@
     - アクティブなフレームワークのリポジトリを見る限りこれから
 
 ## 参考資料
-- .NET 9 関連
-- .NET MAUI 関連
-
+- [.NET 9 の新機能](https://learn.microsoft.com/ja-jp/dotnet/core/whats-new/dotnet-9/overview?WT.mc_id=DT-MVP-32182)
+- [.NET 9 向けの .NET MAUI の新機能](https://learn.microsoft.com/ja-jp/dotnet/maui/whats-new/dotnet-9?WT.mc_id=DT-MVP-32182&view=net-maui-9.0)
