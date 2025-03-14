@@ -6,7 +6,7 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:WpfThemeMode"
         mc:Ignorable="d"
-        Title="MainWindow" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" ThemeMode="Dark">
+        Title="MainWindow" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
   <Window.DataContext>
     <local:ViewModel />
   </Window.DataContext>
@@ -67,22 +67,6 @@
         <Label Grid.Column="0" Content="TextBoxのラベル" VerticalContentAlignment="Center" />
         <TextBox Grid.Column="1" Text="TextBox" VerticalContentAlignment="Center" />
       </Grid>
-    </GroupBox>
-    <GroupBox Header="ComboBox">
-      <WrapPanel Orientation="Horizontal">
-        <ComboBox ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}">
-          <ComboBox.ItemTemplate>
-            <DataTemplate>
-              <TextBlock Text="{Binding Item}" />
-            </DataTemplate>
-          </ComboBox.ItemTemplate>
-        </ComboBox>
-        <ComboBox IsEditable="True" SelectedIndex="0">
-          <ComboBoxItem Content="Edit 1" />
-          <ComboBoxItem Content="Edit 2" />
-          <ComboBoxItem Content="Edit 3" />
-        </ComboBox>
-      </WrapPanel>
     </GroupBox>
     <GroupBox Header="DataGrid">
       <DataGrid Grid.Row="18" Grid.Column="1" ItemsSource="{Binding Items}" d:ItemsSource="{d:SampleData ItemCount=3}" SelectedItem="{Binding SelectedItem}">
