@@ -1,0 +1,2107 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-10-01T11:35:13.3142656Z",
+  "analysisEndTime": "2026-10-01T11:35:13.543735Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 2,
+      "issues": 5,
+      "incidents": 78,
+      "effort": 78
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 60,
+        "Optional": 0,
+        "Potential": 18,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 1,
+        "Project": 2,
+        "Api": 75
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+      "startingProject": true,
+      "issues": 4,
+      "storyPoints": 39,
+      "properties": {
+        "appName": "WpfDefaultTheme",
+        "projectKind": "Wpf",
+        "frameworks": [
+          "net9.0-windows"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 6,
+        "numberOfCodeFiles": 6,
+        "linesTotal": 160,
+        "linesOfCode": 160,
+        "totalApiScanned": 428,
+        "minLinesOfCodeToChange": 37,
+        "maxLinesOfCodeToChange": 37
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "81fcc250-b94d-4620-b5dd-cba8f997f030",
+          "ruleId": "NuGet.0001",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\n\u30EC\u30B3\u30E1\u30F3\u30C7\u30FC\u30B7\u30E7\u30F3\uFF1A\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39",
+              "protected": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\n\u30EC\u30B3\u30E1\u30F3\u30C7\u30FC\u30B7\u30E7\u30F3\uFF1A\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+            "snippet": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\n\u30EC\u30B3\u30E1\u30F3\u30C7\u30FC\u30B7\u30E7\u30F3\uFF1A\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39",
+            "protectedSnippet": "Microsoft.Xaml.Behaviors.Wpf, 1.1.135\n\n\u30EC\u30B3\u30E1\u30F3\u30C7\u30FC\u30B7\u30E7\u30F3\uFF1A\n\nMicrosoft.Xaml.Behaviors.Wpf, 1.1.39",
+            "label": "Microsoft.Xaml.Behaviors.Wpf 1.1.135",
+            "properties": {
+              "PackageId": "Microsoft.Xaml.Behaviors.Wpf",
+              "PackageVersion": "1.1.135",
+              "PackageNewVersion": "1.1.39",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "43a1da36-ed45-4fd3-9eb2-2fe38febe956",
+          "ruleId": "Project.0002",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "\u73FE\u5728\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net9.0-windows\n\u63A8\u5968\u3055\u308C\u308B\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net10.0-windows",
+              "protected": "\u73FE\u5728\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net9.0-windows\n\u63A8\u5968\u3055\u308C\u308B\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net10.0-windows"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+            "snippet": "\u73FE\u5728\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net9.0-windows\n\u63A8\u5968\u3055\u308C\u308B\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net10.0-windows",
+            "protectedSnippet": "\u73FE\u5728\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net9.0-windows\n\u63A8\u5968\u3055\u308C\u308B\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net10.0-windows",
+            "properties": {
+              "CurrentTargetFramework": "net9.0-windows",
+              "RecommendedTargetFramework": "net10.0-windows"
+            }
+          }
+        },
+        {
+          "incidentId": "5e926150-1653-4951-b650-92b85c880baa",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "InternalTypeHelper",
+              "protected": "M:System.Windows.Markup.InternalTypeHelper.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\GeneratedInternalTypeHelper.g.i.cs",
+            "snippet": "InternalTypeHelper",
+            "protectedSnippet": "M:System.Windows.Markup.InternalTypeHelper.#ctor",
+            "label": "M:System.Windows.Markup.InternalTypeHelper.#ctor",
+            "properties": {
+              "CharCount": "2942"
+            },
+            "line": 19,
+            "column": 76
+          }
+        },
+        {
+          "incidentId": "c6f101bf-3ba7-4380-8072-750f4611d811",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "InternalTypeHelper",
+              "protected": "T:System.Windows.Markup.InternalTypeHelper"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\GeneratedInternalTypeHelper.g.i.cs",
+            "snippet": "InternalTypeHelper",
+            "protectedSnippet": "T:System.Windows.Markup.InternalTypeHelper",
+            "label": "T:System.Windows.Markup.InternalTypeHelper",
+            "properties": {
+              "CharCount": "2942"
+            },
+            "line": 19,
+            "column": 76
+          }
+        },
+        {
+          "incidentId": "218e6540-55bb-4489-8160-35dea8f61603",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dlg.Show();",
+              "protected": "M:System.Windows.Window.Show"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\ViewModel.cs",
+            "snippet": "dlg.Show();",
+            "protectedSnippet": "M:System.Windows.Window.Show",
+            "label": "M:System.Windows.Window.Show",
+            "properties": {
+              "CharCount": "1579"
+            },
+            "line": 39,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "c73faaf2-d2e9-47e7-af42-375d21d07a66",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dlg.Owner = Application.Current.MainWindow;",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\ViewModel.cs",
+            "snippet": "dlg.Owner = Application.Current.MainWindow;",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "properties": {
+              "CharCount": "1579"
+            },
+            "line": 37,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "fa6a61e2-0da2-4798-8201-9d26c132caed",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dlg.Owner = Application.Current.MainWindow;",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\ViewModel.cs",
+            "snippet": "dlg.Owner = Application.Current.MainWindow;",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "properties": {
+              "CharCount": "1579"
+            },
+            "line": 37,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "6ea040e3-5ebd-4635-af1b-8212f677c76f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dlg.Owner = Application.Current.MainWindow;",
+              "protected": "P:System.Windows.Application.Current"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\ViewModel.cs",
+            "snippet": "dlg.Owner = Application.Current.MainWindow;",
+            "protectedSnippet": "P:System.Windows.Application.Current",
+            "label": "P:System.Windows.Application.Current",
+            "properties": {
+              "CharCount": "1579"
+            },
+            "line": 37,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "dad6585f-bb79-4748-97c7-5890fbdd8498",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dlg.Owner = Application.Current.MainWindow;",
+              "protected": "T:System.Windows.Window"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\ViewModel.cs",
+            "snippet": "dlg.Owner = Application.Current.MainWindow;",
+            "protectedSnippet": "T:System.Windows.Window",
+            "label": "T:System.Windows.Window",
+            "properties": {
+              "CharCount": "1579"
+            },
+            "line": 37,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "dcde572a-99ce-4e9e-839d-520500afefdf",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dlg.Owner = Application.Current.MainWindow;",
+              "protected": "P:System.Windows.Application.MainWindow"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\ViewModel.cs",
+            "snippet": "dlg.Owner = Application.Current.MainWindow;",
+            "protectedSnippet": "P:System.Windows.Application.MainWindow",
+            "label": "P:System.Windows.Application.MainWindow",
+            "properties": {
+              "CharCount": "1579"
+            },
+            "line": 37,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "d1a3b251-d523-4364-9a33-3018926ce324",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dlg.Owner = Application.Current.MainWindow;",
+              "protected": "T:System.Windows.Window"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\ViewModel.cs",
+            "snippet": "dlg.Owner = Application.Current.MainWindow;",
+            "protectedSnippet": "T:System.Windows.Window",
+            "label": "T:System.Windows.Window",
+            "properties": {
+              "CharCount": "1579"
+            },
+            "line": 37,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "cc0608a0-e6f5-4d94-af84-d65c3080e3df",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "dlg.Owner = Application.Current.MainWindow;",
+              "protected": "P:System.Windows.Window.Owner"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\ViewModel.cs",
+            "snippet": "dlg.Owner = Application.Current.MainWindow;",
+            "protectedSnippet": "P:System.Windows.Window.Owner",
+            "label": "P:System.Windows.Window.Owner",
+            "properties": {
+              "CharCount": "1579"
+            },
+            "line": 37,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "ab75371c-627b-4d4b-b7c6-a1d90aed97e4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\PhonePanel.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "properties": {
+              "CharCount": "3039"
+            },
+            "line": 58,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "595ac22d-e82f-4fa7-9375-d571b168c923",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\PhonePanel.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "label": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "properties": {
+              "CharCount": "3039"
+            },
+            "line": 58,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "6b05b37f-7015-4411-9df9-b5499f0b2fcc",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/phonepanel.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\PhonePanel.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/phonepanel.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "3039"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 55,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "53fbbdbd-4920-4727-8676-57086b6e0fce",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/phonepanel.xaml\u0022, System.UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\PhonePanel.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/phonepanel.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "properties": {
+              "CharCount": "3039"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 55,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f7926184-fb91-4bd2-a005-9b35132d1304",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public PhonePanel()\r\n\t\t{\r\n\t\t\tInitializeComponent();\r\n\t\t}",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\PhonePanel.xaml.cs",
+            "snippet": "public PhonePanel()\r\n\t\t{\r\n\t\t\tInitializeComponent();\r\n\t\t}",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "properties": {
+              "CharCount": "573"
+            },
+            "line": 21,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "0d1f0e05-8984-48b1-a84f-9fe5d5760997",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public PhonePanel()\r\n\t\t{\r\n\t\t\tInitializeComponent();\r\n\t\t}",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\PhonePanel.xaml.cs",
+            "snippet": "public PhonePanel()\r\n\t\t{\r\n\t\t\tInitializeComponent();\r\n\t\t}",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "properties": {
+              "CharCount": "573"
+            },
+            "line": 21,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "20d70e55-6e58-430d-8b5f-44f5a51d3989",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "IComponentConnector",
+              "protected": "T:System.Windows.Markup.IComponentConnector"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\PhonePanel.g.i.cs",
+            "snippet": "IComponentConnector",
+            "protectedSnippet": "T:System.Windows.Markup.IComponentConnector",
+            "label": "T:System.Windows.Markup.IComponentConnector",
+            "properties": {
+              "CharCount": "3039"
+            },
+            "line": 41,
+            "column": 83
+          }
+        },
+        {
+          "incidentId": "8ec69f62-aff8-418d-b740-de7a0af21057",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Window",
+              "protected": "T:System.Windows.Window"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\PhonePanel.xaml.cs",
+            "snippet": "Window",
+            "protectedSnippet": "T:System.Windows.Window",
+            "label": "T:System.Windows.Window",
+            "properties": {
+              "CharCount": "573"
+            },
+            "line": 19,
+            "column": 35
+          }
+        },
+        {
+          "incidentId": "2dc036ff-81b7-4c06-b99e-4a15e1a0f52c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.Run();",
+              "protected": "M:System.Windows.Application.Run"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\App.g.i.cs",
+            "snippet": "app.Run();",
+            "protectedSnippet": "M:System.Windows.Application.Run",
+            "label": "M:System.Windows.Application.Run",
+            "properties": {
+              "CharCount": "2821"
+            },
+            "line": 79,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ac6f274f-2906-4594-9047-5a0d6ec17353",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\App.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "properties": {
+              "CharCount": "2821"
+            },
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b61d6e57-629a-4de2-bd08-16e50eccc5a4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\App.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "label": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "properties": {
+              "CharCount": "2821"
+            },
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "325dff82-9e93-4e1c-ac38-72113e086ff5",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/app.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\App.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/app.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2821"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 61,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "3a0a2e3c-200c-4ed9-9569-3bdbd17204dc",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/app.xaml\u0022, System.UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\App.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/app.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "properties": {
+              "CharCount": "2821"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 61,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "af80fe9a-1710-41cf-815f-71e03b79f0ba",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2821"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "9b39807e-81ad-41b0-a439-02d06767f5e9",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "properties": {
+              "CharCount": "2821"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "81e3691f-6ae1-4b96-9f8c-7a827677e91e",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2821"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "299d516e-8448-40e7-9396-3009ed4e069e",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "P:System.Windows.Application.StartupUri"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "P:System.Windows.Application.StartupUri",
+            "label": "P:System.Windows.Application.StartupUri",
+            "properties": {
+              "CharCount": "2821"
+            },
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "0d64fa2d-9ece-458d-83ca-b4f23749e5cb",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Application",
+              "protected": "M:System.Windows.Application.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\App.xaml.cs",
+            "snippet": "Application",
+            "protectedSnippet": "M:System.Windows.Application.#ctor",
+            "label": "M:System.Windows.Application.#ctor",
+            "properties": {
+              "CharCount": "246"
+            },
+            "line": 9,
+            "column": 31
+          }
+        },
+        {
+          "incidentId": "395d9bba-1680-4180-8e6e-4f7da0f71aef",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Application",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\App.xaml.cs",
+            "snippet": "Application",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "properties": {
+              "CharCount": "246"
+            },
+            "line": 9,
+            "column": 31
+          }
+        },
+        {
+          "incidentId": "234e0c8c-824b-4ca0-a95d-359e8ef02b1f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "properties": {
+              "CharCount": "3228"
+            },
+            "line": 63,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "e0a538d8-4b9a-4cb1-90da-1485a11546cb",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "label": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "properties": {
+              "CharCount": "3228"
+            },
+            "line": 63,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "65ec94b8-6521-4dac-b06f-6bfa931ddfe9",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "3228"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 60,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b57ee6fc-2ff9-4f2f-b535-4bd548d9d6f0",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfDefaultTheme;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "properties": {
+              "CharCount": "3228"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 60,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "e8eeaa61-539f-45bd-aa16-08a4eae90fa0",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public MainWindow()\r\n\t{\r\n\t\tInitializeComponent();\r\n\r\n\t\tWeakReferenceMessenger.Default.Register\u003CMainWindow, PropertyChangedMessage\u003CThemeMode\u003E\u003E( this, static ( window, message ) =\u003E\r\n\t\t{\r\n\t\t\t// \u307B\u304B\u306B\u3082ThemeMode\u3092\u3084\u308A\u53D6\u308A\u3059\u308B\u30E1\u30C3\u30BB\u30F3\u30B8\u30E3\u30FC\u3092\u4F5C\u3063\u305F\u3089\u3001\u7834\u7DBB\u3059\u308B\u306E\u3067\u8981\u6CE8\u610F\r\n\t\t\tDebug.Assert( message.PropertyName == \u0022ThemeMode\u0022 );\r\n\t\t\twindow.ThemeMode = message.NewValue;\r\n\t\t} );\r\n\t}",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\MainWindow.xaml.cs",
+            "snippet": "public MainWindow()\r\n\t{\r\n\t\tInitializeComponent();\r\n\r\n\t\tWeakReferenceMessenger.Default.Register\u003CMainWindow, PropertyChangedMessage\u003CThemeMode\u003E\u003E( this, static ( window, message ) =\u003E\r\n\t\t{\r\n\t\t\t// \u307B\u304B\u306B\u3082ThemeMode\u3092\u3084\u308A\u53D6\u308A\u3059\u308B\u30E1\u30C3\u30BB\u30F3\u30B8\u30E3\u30FC\u3092\u4F5C\u3063\u305F\u3089\u3001\u7834\u7DBB\u3059\u308B\u306E\u3067\u8981\u6CE8\u610F\r\n\t\t\tDebug.Assert( message.PropertyName == \u0022ThemeMode\u0022 );\r\n\t\t\twindow.ThemeMode = message.NewValue;\r\n\t\t} );\r\n\t}",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "properties": {
+              "CharCount": "845"
+            },
+            "line": 13,
+            "column": 1
+          }
+        },
+        {
+          "incidentId": "9ecaccc5-62b1-484e-bdb3-93459de0660b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public MainWindow()\r\n\t{\r\n\t\tInitializeComponent();\r\n\r\n\t\tWeakReferenceMessenger.Default.Register\u003CMainWindow, PropertyChangedMessage\u003CThemeMode\u003E\u003E( this, static ( window, message ) =\u003E\r\n\t\t{\r\n\t\t\t// \u307B\u304B\u306B\u3082ThemeMode\u3092\u3084\u308A\u53D6\u308A\u3059\u308B\u30E1\u30C3\u30BB\u30F3\u30B8\u30E3\u30FC\u3092\u4F5C\u3063\u305F\u3089\u3001\u7834\u7DBB\u3059\u308B\u306E\u3067\u8981\u6CE8\u610F\r\n\t\t\tDebug.Assert( message.PropertyName == \u0022ThemeMode\u0022 );\r\n\t\t\twindow.ThemeMode = message.NewValue;\r\n\t\t} );\r\n\t}",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\MainWindow.xaml.cs",
+            "snippet": "public MainWindow()\r\n\t{\r\n\t\tInitializeComponent();\r\n\r\n\t\tWeakReferenceMessenger.Default.Register\u003CMainWindow, PropertyChangedMessage\u003CThemeMode\u003E\u003E( this, static ( window, message ) =\u003E\r\n\t\t{\r\n\t\t\t// \u307B\u304B\u306B\u3082ThemeMode\u3092\u3084\u308A\u53D6\u308A\u3059\u308B\u30E1\u30C3\u30BB\u30F3\u30B8\u30E3\u30FC\u3092\u4F5C\u3063\u305F\u3089\u3001\u7834\u7DBB\u3059\u308B\u306E\u3067\u8981\u6CE8\u610F\r\n\t\t\tDebug.Assert( message.PropertyName == \u0022ThemeMode\u0022 );\r\n\t\t\twindow.ThemeMode = message.NewValue;\r\n\t\t} );\r\n\t}",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "properties": {
+              "CharCount": "845"
+            },
+            "line": 13,
+            "column": 1
+          }
+        },
+        {
+          "incidentId": "1c3c1b18-533c-4f89-a45e-d053765af2f9",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "IComponentConnector",
+              "protected": "T:System.Windows.Markup.IComponentConnector"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\obj\\Debug\\net9.0-windows\\MainWindow.g.i.cs",
+            "snippet": "IComponentConnector",
+            "protectedSnippet": "T:System.Windows.Markup.IComponentConnector",
+            "label": "T:System.Windows.Markup.IComponentConnector",
+            "properties": {
+              "CharCount": "3228"
+            },
+            "line": 46,
+            "column": 83
+          }
+        },
+        {
+          "incidentId": "33c0ea97-2fa1-4b93-a046-2fc8eb096da7",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfDefaultTheme\\WpfDefaultTheme.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Window",
+              "protected": "T:System.Windows.Window"
+            },
+            "kind": "File",
+            "path": "WpfDefaultTheme\\MainWindow.xaml.cs",
+            "snippet": "Window",
+            "protectedSnippet": "T:System.Windows.Window",
+            "label": "T:System.Windows.Window",
+            "properties": {
+              "CharCount": "845"
+            },
+            "line": 11,
+            "column": 34
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "Wpf",
+          "incidents": [
+            "1c3c1b18-533c-4f89-a45e-d053765af2f9",
+            "20d70e55-6e58-430d-8b5f-44f5a51d3989",
+            "c6f101bf-3ba7-4380-8072-750f4611d811",
+            "5e926150-1653-4951-b650-92b85c880baa"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "WpfThemeMode\\WpfThemeMode.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 39,
+      "properties": {
+        "appName": "WpfThemeMode",
+        "projectKind": "Wpf",
+        "frameworks": [
+          "net9.0-windows10.0.22000.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 7,
+        "numberOfCodeFiles": 7,
+        "linesTotal": 177,
+        "linesOfCode": 177,
+        "totalApiScanned": 400,
+        "minLinesOfCodeToChange": 38,
+        "maxLinesOfCodeToChange": 38
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "a7df6745-e980-4fdb-80c2-a5df5ccde248",
+          "ruleId": "Project.0002",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "\u73FE\u5728\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net9.0-windows10.0.22000.0\n\u63A8\u5968\u3055\u308C\u308B\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net10.0-windows",
+              "protected": "\u73FE\u5728\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net9.0-windows10.0.22000.0\n\u63A8\u5968\u3055\u308C\u308B\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net10.0-windows"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\WpfThemeMode.csproj",
+            "snippet": "\u73FE\u5728\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net9.0-windows10.0.22000.0\n\u63A8\u5968\u3055\u308C\u308B\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net10.0-windows",
+            "protectedSnippet": "\u73FE\u5728\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net9.0-windows10.0.22000.0\n\u63A8\u5968\u3055\u308C\u308B\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF: net10.0-windows",
+            "properties": {
+              "CurrentTargetFramework": "net9.0-windows10.0.22000.0",
+              "RecommendedTargetFramework": "net10.0-windows"
+            }
+          }
+        },
+        {
+          "incidentId": "0b18fce2-422f-433e-aaec-e961a93f3851",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "InternalTypeHelper",
+              "protected": "M:System.Windows.Markup.InternalTypeHelper.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\GeneratedInternalTypeHelper.g.i.cs",
+            "snippet": "InternalTypeHelper",
+            "protectedSnippet": "M:System.Windows.Markup.InternalTypeHelper.#ctor",
+            "label": "M:System.Windows.Markup.InternalTypeHelper.#ctor",
+            "properties": {
+              "CharCount": "2942"
+            },
+            "line": 19,
+            "column": 76
+          }
+        },
+        {
+          "incidentId": "23051667-57e6-42cd-90da-c96ee4634263",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "InternalTypeHelper",
+              "protected": "T:System.Windows.Markup.InternalTypeHelper"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\GeneratedInternalTypeHelper.g.i.cs",
+            "snippet": "InternalTypeHelper",
+            "protectedSnippet": "T:System.Windows.Markup.InternalTypeHelper",
+            "label": "T:System.Windows.Markup.InternalTypeHelper",
+            "properties": {
+              "CharCount": "2942"
+            },
+            "line": 19,
+            "column": 76
+          }
+        },
+        {
+          "incidentId": "afc91e5a-eba0-47f6-8758-89ee7efde08b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return System.Windows.DependencyProperty.UnsetValue;",
+              "protected": "T:System.Windows.DependencyProperty"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\BoolToThemeModeConverter.cs",
+            "snippet": "return System.Windows.DependencyProperty.UnsetValue;",
+            "protectedSnippet": "T:System.Windows.DependencyProperty",
+            "label": "T:System.Windows.DependencyProperty",
+            "properties": {
+              "CharCount": "1183"
+            },
+            "line": 36,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "cf8776a5-3b66-4624-9cab-4dc30e7923ec",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return System.Windows.DependencyProperty.UnsetValue;",
+              "protected": "F:System.Windows.DependencyProperty.UnsetValue"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\BoolToThemeModeConverter.cs",
+            "snippet": "return System.Windows.DependencyProperty.UnsetValue;",
+            "protectedSnippet": "F:System.Windows.DependencyProperty.UnsetValue",
+            "label": "F:System.Windows.DependencyProperty.UnsetValue",
+            "properties": {
+              "CharCount": "1183"
+            },
+            "line": 36,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "0bdf55b6-e6fa-4d3b-b487-42569b30865a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return System.Windows.DependencyProperty.UnsetValue;",
+              "protected": "T:System.Windows.DependencyProperty"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\BoolToThemeModeConverter.cs",
+            "snippet": "return System.Windows.DependencyProperty.UnsetValue;",
+            "protectedSnippet": "T:System.Windows.DependencyProperty",
+            "label": "T:System.Windows.DependencyProperty",
+            "properties": {
+              "CharCount": "1183"
+            },
+            "line": 20,
+            "column": 3
+          }
+        },
+        {
+          "incidentId": "cf6e5045-34dc-45e9-8dfa-983c53bdc9f9",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return System.Windows.DependencyProperty.UnsetValue;",
+              "protected": "F:System.Windows.DependencyProperty.UnsetValue"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\BoolToThemeModeConverter.cs",
+            "snippet": "return System.Windows.DependencyProperty.UnsetValue;",
+            "protectedSnippet": "F:System.Windows.DependencyProperty.UnsetValue",
+            "label": "F:System.Windows.DependencyProperty.UnsetValue",
+            "properties": {
+              "CharCount": "1183"
+            },
+            "line": 20,
+            "column": 3
+          }
+        },
+        {
+          "incidentId": "11dae470-df0a-4b35-b02b-d95177e63b9c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return System.Windows.DependencyProperty.UnsetValue;",
+              "protected": "T:System.Windows.DependencyProperty"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\BoolToThemeModeConverter.cs",
+            "snippet": "return System.Windows.DependencyProperty.UnsetValue;",
+            "protectedSnippet": "T:System.Windows.DependencyProperty",
+            "label": "T:System.Windows.DependencyProperty",
+            "properties": {
+              "CharCount": "1183"
+            },
+            "line": 15,
+            "column": 3
+          }
+        },
+        {
+          "incidentId": "09d498d9-1ac5-425f-a745-371f1a27e911",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return System.Windows.DependencyProperty.UnsetValue;",
+              "protected": "F:System.Windows.DependencyProperty.UnsetValue"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\BoolToThemeModeConverter.cs",
+            "snippet": "return System.Windows.DependencyProperty.UnsetValue;",
+            "protectedSnippet": "F:System.Windows.DependencyProperty.UnsetValue",
+            "label": "F:System.Windows.DependencyProperty.UnsetValue",
+            "properties": {
+              "CharCount": "1183"
+            },
+            "line": 15,
+            "column": 3
+          }
+        },
+        {
+          "incidentId": "d5d39617-0e09-4f31-b921-1fbbbd913f13",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "IValueConverter",
+              "protected": "T:System.Windows.Data.IValueConverter"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\BoolToThemeModeConverter.cs",
+            "snippet": "IValueConverter",
+            "protectedSnippet": "T:System.Windows.Data.IValueConverter",
+            "label": "T:System.Windows.Data.IValueConverter",
+            "properties": {
+              "CharCount": "1183"
+            },
+            "line": 7,
+            "column": 40
+          }
+        },
+        {
+          "incidentId": "131be86b-a814-44cf-99e8-4d7fc505cfc2",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\PhonePanel.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "properties": {
+              "CharCount": "3030"
+            },
+            "line": 58,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "51e2e328-2930-4866-94cb-e1e1eff053ef",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\PhonePanel.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "label": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "properties": {
+              "CharCount": "3030"
+            },
+            "line": 58,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f7eab85f-869c-457e-ad91-d009f139a339",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/phonepanel.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\PhonePanel.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/phonepanel.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "3030"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 55,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b65077f2-6360-4cc7-9bce-5c765a253df3",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/phonepanel.xaml\u0022, System.UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\PhonePanel.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/phonepanel.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "properties": {
+              "CharCount": "3030"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 55,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "825a0568-7e53-4e61-9da2-5a4f672eb9a5",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public PhonePanel()\r\n\t\t{\r\n\t\t\tInitializeComponent();\r\n\t\t}",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\PhonePanel.xaml.cs",
+            "snippet": "public PhonePanel()\r\n\t\t{\r\n\t\t\tInitializeComponent();\r\n\t\t}",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "properties": {
+              "CharCount": "570"
+            },
+            "line": 21,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "f557d95e-d791-4d13-9344-44681193c75c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public PhonePanel()\r\n\t\t{\r\n\t\t\tInitializeComponent();\r\n\t\t}",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\PhonePanel.xaml.cs",
+            "snippet": "public PhonePanel()\r\n\t\t{\r\n\t\t\tInitializeComponent();\r\n\t\t}",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "properties": {
+              "CharCount": "570"
+            },
+            "line": 21,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "7b98b238-0f59-41f8-993d-84909864a985",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "IComponentConnector",
+              "protected": "T:System.Windows.Markup.IComponentConnector"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\PhonePanel.g.i.cs",
+            "snippet": "IComponentConnector",
+            "protectedSnippet": "T:System.Windows.Markup.IComponentConnector",
+            "label": "T:System.Windows.Markup.IComponentConnector",
+            "properties": {
+              "CharCount": "3030"
+            },
+            "line": 41,
+            "column": 83
+          }
+        },
+        {
+          "incidentId": "a836c258-ea62-4a6c-b29c-c209e0914080",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Window",
+              "protected": "T:System.Windows.Window"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\PhonePanel.xaml.cs",
+            "snippet": "Window",
+            "protectedSnippet": "T:System.Windows.Window",
+            "label": "T:System.Windows.Window",
+            "properties": {
+              "CharCount": "570"
+            },
+            "line": 19,
+            "column": 35
+          }
+        },
+        {
+          "incidentId": "0cbff90d-122f-4c54-870a-50af89c9fd66",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.Run();",
+              "protected": "M:System.Windows.Application.Run"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\App.g.i.cs",
+            "snippet": "app.Run();",
+            "protectedSnippet": "M:System.Windows.Application.Run",
+            "label": "M:System.Windows.Application.Run",
+            "properties": {
+              "CharCount": "2806"
+            },
+            "line": 79,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "6cabcfc4-173b-48b1-92b2-0fda50233eb5",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\App.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "properties": {
+              "CharCount": "2806"
+            },
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "5e583194-32d3-43b4-82d8-7cb3d058d52a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\App.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "label": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "properties": {
+              "CharCount": "2806"
+            },
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ae4c7668-9303-4dc2-918b-57505df0b91d",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/app.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\App.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/app.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2806"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 61,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "492a1a8c-c803-40de-ba60-d15c9a3fa306",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/app.xaml\u0022, System.UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\App.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/app.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "properties": {
+              "CharCount": "2806"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 61,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "cf21d8b7-49cd-4881-8c3b-185bd5c6d2a1",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2806"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "130accef-4a6e-4484-bcab-f362005dfa69",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "properties": {
+              "CharCount": "2806"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f6ab0bd4-b90c-4cb7-9aac-5b635f3d09de",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2806"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "cac21ed5-4814-4d96-9cdc-5d6176ef1cb4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "P:System.Windows.Application.StartupUri"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "P:System.Windows.Application.StartupUri",
+            "label": "P:System.Windows.Application.StartupUri",
+            "properties": {
+              "CharCount": "2806"
+            },
+            "line": 57,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "389fb067-d28e-418d-ac35-7ea782ac958b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Application",
+              "protected": "M:System.Windows.Application.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\App.xaml.cs",
+            "snippet": "Application",
+            "protectedSnippet": "M:System.Windows.Application.#ctor",
+            "label": "M:System.Windows.Application.#ctor",
+            "properties": {
+              "CharCount": "225"
+            },
+            "line": 9,
+            "column": 28
+          }
+        },
+        {
+          "incidentId": "013854e3-2143-478d-80eb-d694e233b6c1",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Application",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\App.xaml.cs",
+            "snippet": "Application",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "properties": {
+              "CharCount": "225"
+            },
+            "line": 9,
+            "column": 28
+          }
+        },
+        {
+          "incidentId": "7d6afc4b-cc3c-4a08-8175-ae348d0e4b23",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\MainWindow.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "properties": {
+              "CharCount": "3030"
+            },
+            "line": 58,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "09042967-cb8e-440f-bf23-074d1f4987f1",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\MainWindow.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "label": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "properties": {
+              "CharCount": "3030"
+            },
+            "line": 58,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "a5b87cd8-ce4f-4661-a295-5a924730591f",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\MainWindow.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "3030"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 55,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "e23916c7-31e2-4aca-a10b-fab502774d9a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\MainWindow.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfThemeMode;V1.0.0.0;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "properties": {
+              "CharCount": "3030"
+            },
+            "links": [
+              {
+                "title": "API \u30C9\u30AD\u30E5\u30E1\u30F3\u30C8",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 55,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f12a5fe7-acc4-4c70-8146-1647f883e1c4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "((ViewModel)DataContext).ThemeMode = ThemeMode;",
+              "protected": "P:System.Windows.FrameworkElement.DataContext"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\MainWindow.xaml.cs",
+            "snippet": "((ViewModel)DataContext).ThemeMode = ThemeMode;",
+            "protectedSnippet": "P:System.Windows.FrameworkElement.DataContext",
+            "label": "P:System.Windows.FrameworkElement.DataContext",
+            "properties": {
+              "CharCount": "679"
+            },
+            "line": 16,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "69d1e326-26ec-4962-962f-551d0c5bf85b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public MainWindow()\r\n\t{\r\n\t\tInitializeComponent();\r\n\t\t// \u73FE\u5728\u306E\u30C6\u30FC\u30DE\u30E2\u30FC\u30C9\u3067\u521D\u671F\u5316\u3057\u3066\u304A\u304F\r\n\t\t((ViewModel)DataContext).ThemeMode = ThemeMode;\r\n\r\n\t\t// ThemeMode \u306FDependencyProperty\u3067\u306F\u306A\u3044\u306E\u3067\u3001Messenger \u7D4C\u7531\u3067\u53D7\u3051\u53D6\u3063\u3066View\u306B\u53CD\u6620\u3059\u308B\r\n\t\tWeakReferenceMessenger.Default.Register\u003CMainWindow, PropertyChangedMessage\u003CThemeMode\u003E\u003E( this, static ( window, message ) =\u003E\r\n\t\t{\r\n\t\t\twindow.ThemeMode = message.NewValue;\r\n\t\t} );\r\n\t}",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\MainWindow.xaml.cs",
+            "snippet": "public MainWindow()\r\n\t{\r\n\t\tInitializeComponent();\r\n\t\t// \u73FE\u5728\u306E\u30C6\u30FC\u30DE\u30E2\u30FC\u30C9\u3067\u521D\u671F\u5316\u3057\u3066\u304A\u304F\r\n\t\t((ViewModel)DataContext).ThemeMode = ThemeMode;\r\n\r\n\t\t// ThemeMode \u306FDependencyProperty\u3067\u306F\u306A\u3044\u306E\u3067\u3001Messenger \u7D4C\u7531\u3067\u53D7\u3051\u53D6\u3063\u3066View\u306B\u53CD\u6620\u3059\u308B\r\n\t\tWeakReferenceMessenger.Default.Register\u003CMainWindow, PropertyChangedMessage\u003CThemeMode\u003E\u003E( this, static ( window, message ) =\u003E\r\n\t\t{\r\n\t\t\twindow.ThemeMode = message.NewValue;\r\n\t\t} );\r\n\t}",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "properties": {
+              "CharCount": "679"
+            },
+            "line": 12,
+            "column": 1
+          }
+        },
+        {
+          "incidentId": "4ce577ce-444a-41bd-8cfe-004c35abd948",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "((ViewModel)DataContext).ThemeMode = ThemeMode;",
+              "protected": "P:System.Windows.FrameworkElement.DataContext"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\MainWindow.xaml.cs",
+            "snippet": "((ViewModel)DataContext).ThemeMode = ThemeMode;",
+            "protectedSnippet": "P:System.Windows.FrameworkElement.DataContext",
+            "label": "P:System.Windows.FrameworkElement.DataContext",
+            "properties": {
+              "CharCount": "679"
+            },
+            "line": 16,
+            "column": 2
+          }
+        },
+        {
+          "incidentId": "c3e41930-711d-4b84-b2a0-275737d944ca",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public MainWindow()\r\n\t{\r\n\t\tInitializeComponent();\r\n\t\t// \u73FE\u5728\u306E\u30C6\u30FC\u30DE\u30E2\u30FC\u30C9\u3067\u521D\u671F\u5316\u3057\u3066\u304A\u304F\r\n\t\t((ViewModel)DataContext).ThemeMode = ThemeMode;\r\n\r\n\t\t// ThemeMode \u306FDependencyProperty\u3067\u306F\u306A\u3044\u306E\u3067\u3001Messenger \u7D4C\u7531\u3067\u53D7\u3051\u53D6\u3063\u3066View\u306B\u53CD\u6620\u3059\u308B\r\n\t\tWeakReferenceMessenger.Default.Register\u003CMainWindow, PropertyChangedMessage\u003CThemeMode\u003E\u003E( this, static ( window, message ) =\u003E\r\n\t\t{\r\n\t\t\twindow.ThemeMode = message.NewValue;\r\n\t\t} );\r\n\t}",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\MainWindow.xaml.cs",
+            "snippet": "public MainWindow()\r\n\t{\r\n\t\tInitializeComponent();\r\n\t\t// \u73FE\u5728\u306E\u30C6\u30FC\u30DE\u30E2\u30FC\u30C9\u3067\u521D\u671F\u5316\u3057\u3066\u304A\u304F\r\n\t\t((ViewModel)DataContext).ThemeMode = ThemeMode;\r\n\r\n\t\t// ThemeMode \u306FDependencyProperty\u3067\u306F\u306A\u3044\u306E\u3067\u3001Messenger \u7D4C\u7531\u3067\u53D7\u3051\u53D6\u3063\u3066View\u306B\u53CD\u6620\u3059\u308B\r\n\t\tWeakReferenceMessenger.Default.Register\u003CMainWindow, PropertyChangedMessage\u003CThemeMode\u003E\u003E( this, static ( window, message ) =\u003E\r\n\t\t{\r\n\t\t\twindow.ThemeMode = message.NewValue;\r\n\t\t} );\r\n\t}",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "properties": {
+              "CharCount": "679"
+            },
+            "line": 12,
+            "column": 1
+          }
+        },
+        {
+          "incidentId": "ff801b49-5e8e-435a-b8f5-bea50202f788",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "IComponentConnector",
+              "protected": "T:System.Windows.Markup.IComponentConnector"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\obj\\Debug\\net9.0-windows10.0.22000.0\\MainWindow.g.i.cs",
+            "snippet": "IComponentConnector",
+            "protectedSnippet": "T:System.Windows.Markup.IComponentConnector",
+            "label": "T:System.Windows.Markup.IComponentConnector",
+            "properties": {
+              "CharCount": "3030"
+            },
+            "line": 41,
+            "column": 83
+          }
+        },
+        {
+          "incidentId": "2fb3725d-7b80-43f3-a6b3-0af5217988fc",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfThemeMode\\WpfThemeMode.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Window",
+              "protected": "T:System.Windows.Window"
+            },
+            "kind": "File",
+            "path": "WpfThemeMode\\MainWindow.xaml.cs",
+            "snippet": "Window",
+            "protectedSnippet": "T:System.Windows.Window",
+            "label": "T:System.Windows.Window",
+            "properties": {
+              "CharCount": "679"
+            },
+            "line": 10,
+            "column": 34
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "Wpf",
+          "incidents": [
+            "ff801b49-5e8e-435a-b8f5-bea50202f788",
+            "7b98b238-0f59-41f8-993d-84909864a985",
+            "d5d39617-0e09-4f31-b921-1fbbbd913f13",
+            "23051667-57e6-42cd-90da-c96ee4634263",
+            "0b18fce2-422f-433e-aaec-e961a93f3851"
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "NuGet.0001": {
+      "id": "NuGet.0001",
+      "isFeature": false,
+      "description": "NuGet \u30D1\u30C3\u30B1\u30FC\u30B8\u306F\u3001\u9078\u629E\u3057\u305F\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF\u3068\u4E92\u63DB\u6027\u304C\u3042\u308A\u307E\u305B\u3093\u3002\n\n\u30D1\u30C3\u30B1\u30FC\u30B8\u306F\u3001\u9078\u629E\u3057\u305F\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8 \u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF\u3092\u30B5\u30DD\u30FC\u30C8\u3059\u308B\u30D0\u30FC\u30B8\u30E7\u30F3\u306B\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u3059\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002\u65B0\u3057\u3044\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF\u3092\u30B5\u30DD\u30FC\u30C8\u3059\u308B\u65B0\u3057\u3044\u30D1\u30C3\u30B1\u30FC\u30B8 \u30D0\u30FC\u30B8\u30E7\u30F3\u304C\u306A\u3044\u5834\u5408\u306F\u3001\u7570\u306A\u308B\u30D1\u30C3\u30B1\u30FC\u30B8\u3092\u4F7F\u7528\u3059\u308B\u5FC5\u8981\u304C\u3042\u308A\u3001\u3059\u3079\u3066\u306E\u30B3\u30FC\u30C9\u3092\u65B0\u3057\u3044 API \u306B\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u3059\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002",
+      "label": "NuGet \u30D1\u30C3\u30B1\u30FC\u30B8\u306B\u4E92\u63DB\u6027\u304C\u3042\u308A\u307E\u305B\u3093",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262529",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF\u306F\u3001\u3053\u306E\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u7528\u306B\u9078\u629E\u3057\u305F\u65B0\u3057\u3044\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF\u306B\u5909\u66F4\u3059\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002\n\n\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u4E2D\u3001\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF\u306F\u3001\u8A72\u5F53\u3059\u308B\u5834\u5408\u3001\u5BFE\u5FDC\u3059\u308B\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u306B\u8ABF\u6574\u3055\u308C\u307E\u3059\u3002\u5834\u5408\u306B\u3088\u3063\u3066\u306F\u3001\u6700\u65B0\u306E .NET \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF (Windows\u3001iOS\u3001Android \u306A\u3069) \u3067\u72EC\u81EA\u306E\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u3092\u6301\u3064\u3088\u3046\u306B\u306A\u3063\u305F\u6A5F\u80FD\u3092\u4F7F\u7528\u3057\u3066\u3044\u305F\u5834\u5408\u3001\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u5F8C\u306B\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3067\u8907\u6570\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF\u304C\u767A\u751F\u3059\u308B\u5834\u5408\u304C\u3042\u308A\u307E\u3059\u3002",
+      "label": "\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 \u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF\u3092\u5909\u66F4\u3059\u308B\u5FC5\u8981\u304C\u3042\u308B",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": ".NET Framework\u304B\u3089 .NET \u3078\u306E\u79FB\u690D\u306E\u6982\u8981",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET \u30D7\u30ED\u30B8\u30A7\u30AF\u30C8 SDK",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "isFeature": false,
+      "description": "\u9078\u629E\u3057\u305F .NET \u30D0\u30FC\u30B8\u30E7\u30F3\u3067\u306F API \u306E\u30D0\u30A4\u30CA\u30EA\u306B\u4E92\u63DB\u6027\u304C\u3042\u308A\u307E\u305B\u3093\u3002\u53E4\u3044\u30D0\u30A4\u30CA\u30EA\u306E\u8AAD\u307F\u8FBC\u307F\u3084\u5B9F\u884C\u3092\u59A8\u3052\u308B\u5F62\u3067 API \u304C\u5909\u66F4\u3055\u308C\u3066\u3044\u308B\u305F\u3081\u3001\u65E2\u5B58\u306E\u30D0\u30A4\u30CA\u30EA\u306B\u5F71\u97FF\u3057\u3001\u591A\u304F\u306E\u5834\u5408\u3001\u518D\u30B3\u30F3\u30D1\u30A4\u30EB\u304C\u5FC5\u8981\u306B\u306A\u308A\u307E\u3059\u3002",
+      "label": "\u9078\u629E\u3057\u305F .NET \u30D0\u30FC\u30B8\u30E7\u30F3\u3067\u306F\u30D0\u30A4\u30CA\u30EA\u306B\u4E92\u63DB\u6027\u304C\u3042\u308A\u307E\u305B\u3093",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": ".NET \u306E\u7834\u58CA\u7684\u5909\u66F4",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "isFeature": false,
+      "description": "\u9078\u629E\u3057\u305F .NET \u30D0\u30FC\u30B8\u30E7\u30F3\u3067 API \u306E\u52D5\u4F5C\u304C\u5909\u66F4\u3055\u308C\u3066\u3044\u307E\u3059\u3002\u518D\u30B3\u30F3\u30D1\u30A4\u30EB\u3092\u5FC5\u8981\u3068\u305B\u305A\u306B\u30B3\u30FC\u30C9\u3068\u30D0\u30A4\u30CA\u30EA\u306E\u52D5\u4F5C\u304C\u5B9F\u884C\u6642\u306B\u7570\u306A\u308B\u5834\u5408\u304C\u3042\u308A\u307E\u3059\u304C\u3001\u65B0\u3057\u3044\u52D5\u4F5C\u304C\u671B\u307E\u3057\u304F\u306A\u304F\u3001\u66F4\u65B0\u304C\u5FC5\u8981\u306B\u306A\u308B\u53EF\u80FD\u6027\u304C\u3042\u308A\u307E\u3059\u3002",
+      "label": "\u9078\u629E\u3057\u305F .NET \u30D0\u30FC\u30B8\u30E7\u30F3\u3067\u306E\u52D5\u4F5C\u306E\u5909\u66F4",
+      "severity": "Potential",
+      "effort": 1
+    },
+    "Wpf": {
+      "id": "Wpf",
+      "isFeature": false,
+      "description": "WPF APIs for building Windows desktop applications with XAML-based UI that are available in .NET on Windows. WPF provides rich desktop UI capabilities with data binding and styling. Enable Windows Desktop support: Option 1 (Recommended): Target net9.0-windows; Option 2: Add \u003CUseWindowsDesktop\u003Etrue\u003C/UseWindowsDesktop\u003E.",
+      "label": "WPF (Windows Presentation Foundation)",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "WPF on .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2342008",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
