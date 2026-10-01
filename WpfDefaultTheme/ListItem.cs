@@ -6,16 +6,16 @@ namespace WpfDefaultTheme;
 public partial class ListItem : ObservableObject
 {
 	[ObservableProperty]
-	string item;
+	public partial string Item { get; set; }
 
 	[ObservableProperty]
-	string subItem;
+	public partial string SubItem { get; set; }
 
 	[ObservableProperty]
-	int subItem2;
+	public partial int SubItem2 { get; set; }
 
 	[ObservableProperty]
-	bool subItem3;
+	public partial bool SubItem3 { get; set; }
 
 	public ListItem( string item, string subItem, int subItem2, bool subItem3 )
 	{

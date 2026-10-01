@@ -3,8 +3,8 @@ using System.Windows;
 using System.Windows.Data;
 
 namespace WpfThemeMode;
-#pragma warning disable WPF0001 // 種類は、評価の目的でのみ提供されています。将来の更新で変更または削除されることがあります。続行するには、この診断を非表示にします。
 
+// ThemeMode は enum ではないので、ラジオのバインド用にコンバーターでbool値に変換する
 public class BoolToThemeModeConverter : IValueConverter
 {
 	private ThemeModeConverter ThemeModeConverter { get; init; } = new();
@@ -37,4 +37,3 @@ public class BoolToThemeModeConverter : IValueConverter
 		return System.Windows.DependencyProperty.UnsetValue;
 	}
 }
-#pragma warning restore WPF0001 // 種類は、評価の目的でのみ提供されています。将来の更新で変更または削除されることがあります。続行するには、この診断を非表示にします。
